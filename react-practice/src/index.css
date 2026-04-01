@@ -1,0 +1,171 @@
+/* ОБЩИЕ СТИЛИ */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #d5dbe0;
+  color: #2c3e50;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(44, 62, 80, 0.12);
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  color: #1e293b;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  margin: 40px 0;
+}
+
+/* ФОРМЫ И КНОПКИ */
+input {
+  padding: 10px 12px;
+  border: 1px solid #b0bec5;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.2s;
+  box-sizing: border-box;
+  color: #1e293b;
+  background: #f8fafc;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6366f1;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #e2e8f0;
+  color: #475569;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #cbd5e1;
+  color: #1e293b;
+}
+
+/* ЗАДАНИЕ 1 */
+.preview-box {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f1f5f9;
+  border-left: 4px solid #8b5cf6;
+  border-radius: 4px;
+}
+
+/* ЗАДАНИЕ 2 (ТЕМА) */
+.theme-container {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  transition: 0.3s ease;
+}
+.theme-light {
+  background-color: #f8fafc;
+  color: #334155;
+}
+.theme-dark {
+  background-color: #0f172a;
+  color: #f8fafc;
+  border-color: #334155;
+}
+
+/* ЗАДАНИЕ 3 (СПИСОК) */
+.todo-input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.todo-input-group input {
+  flex-grow: 1;
+}
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.todo-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #f8fafc;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #dde3e9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.todo-text {
+  flex-grow: 1;
+  cursor: pointer;
+}
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+.btn-delete {
+  background: #f43f5e;
+  color: white;
+}
+.btn-delete:hover {
+  background: #e11d48;
+  color: white;
+}
+
+/* ЗАДАНИЕ 4 (СЕРВИСЫ) */
+.user-form, .user-card {
+  padding: 20px;
+  border: 1px solid #dde3e9;
+  border-radius: 10px;
+  background: #f1f5f9;
+  max-width: 320px;
+}
+.user-form input {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.user-card {
+  background-color: #ecfdf5;
+  border-color: #5eead4;
+}
+.user-card h3 {
+  color: #0f766e;
+}
+.btn-save {
+  width: 100%;
+  background: #6366f1;
+  color: white;
+}
+.btn-save:hover {
+  background: #4f46e5;
+  color: white;
+}
